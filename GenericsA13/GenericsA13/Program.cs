@@ -5,20 +5,19 @@
         {
             static void Main(string[] args)
             {
-                Console.WriteLine("Find maximum  number among 3 float Values ");
-                //Maximum number between three float values 
-               //It will return First maximum float value
-                float maxno = CheckMaximumNumber.MaximumFloat(20.9f, 1.8f, 20.3f);
-                Console.WriteLine("Maximum float number is" + maxno);
+                Console.WriteLine("Find maximum  string among 3 string Values ");
 
-                //It will return Second maximum float value
-                float maxno1 = CheckMaximumNumber.MaximumFloat(1.8f, 20.9f, 20.3f);
-                Console.WriteLine("Maximum float number is:" + maxno1);
+            //It will return maximum string value among 3 Strings.
+            string maxstring = CheckMaximumNumber.MaximunStringNumber("Peach","Apple","Banana");
+                Console.WriteLine("Maximum string is"+maxstring);
 
-                //It will return Third maximum float value
-                float maxno2 = CheckMaximumNumber.MaximumFloat(1.8f, 20.3f, 20.9f);
-                Console.WriteLine("Maximum float number is:" + maxno2);
+            string maxstring1 = CheckMaximumNumber.MaximunStringNumber("Apple","Peach","Banana");
+            Console.WriteLine("Maximum string is" + maxstring1);
 
-            }
+
+            string maxstring2 = CheckMaximumNumber.MaximunStringNumber("Banana","Apple","Peach");
+            Console.WriteLine("Maximum string is" + maxstring2);
+
         }
+    }
     }
