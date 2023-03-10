@@ -8,26 +8,8 @@ namespace GenericsA13
 {
         internal class CheckMaximumNumber
         {
-            //UC1 check maximum number among three numbers 
-            //Checking for the integer values 
-            public static int MaximumIntegerNumber(int firstValue, int secondValue, int thirdValue)
-            {
-                //string test = string.Empty;//""
-                if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
-                {
-                    return firstValue;
-                }
-                if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0)
-                {
-                    return secondValue;
-                }
-                if (thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(secondValue) > 0)
-                {
-                    return thirdValue;
-                }
-                throw new Exception("firstNumber,secondNumber and thirdNumber are same");
-            }
-
+            //UC2 check maximum number among three numbers 
+            //Checking for the float values 
             //Checking for maximum float value 
             public static float MaximumFloat(float first, float second, float third)
             {
