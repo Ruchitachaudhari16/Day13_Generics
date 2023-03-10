@@ -3,54 +3,25 @@
     {
         internal class Program
         {
-            static void Main(string[] args)
-            {
-            //UC1 Maximum integer number
-            Console.WriteLine("Find maximum  number among 3 integer numbers ");
-            //Maximum number between three integer values 
-            //It will return first maximum value
-            int maxnumber = CheckMaximumNumber.MaximumIntegerNumber(95, 20, 30);
-            Console.WriteLine("Maximum integer number is :" + maxnumber);
+        static void Main(string[] args)
+        {
+            //UC4 Extend the max method to take more than the 3 parametres.
+            //integer  values
+            int[] intArray = { 102,98,15,76,45,37 };
+            GenericsMaximum<int> generic = new GenericsMaximum<int>(intArray);
+            generic.PrintValue();
 
-            //It will return Second maximum value 
-            int maxnumber1 = CheckMaximumNumber.MaximumIntegerNumber(20, 95, 30);
-            Console.WriteLine("Maximum integer number is:" + maxnumber1);
+            //double values
+            double[] doubleArray = { 23.5,70.5,15.5,90.5,16.5,65.5  };
+            GenericsMaximum<double> genericsDouble = new GenericsMaximum<double>(doubleArray);
+            genericsDouble.PrintValue();
 
-            //It will return Third maximum value
-            int maxnumber2 = CheckMaximumNumber.MaximumIntegerNumber(30, 20, 95);
-            Console.WriteLine("Maximum integer number is:" + maxnumber2);
-            Console.WriteLine("*****************************************************************");
-
-            //UC2 Maximum float Value
-            //It will return First maximum float value
-            Console.WriteLine("Find maxmium number among 3 float numbers");
-            float maxno = CheckMaximumNumber.MaximumFloat(2.9f, 1.8f, 2.3f);
-            Console.WriteLine("Maximum float number is" + maxno);
-
-            //It will return Second maximum float value
-            float maxno1 = CheckMaximumNumber.MaximumFloat(1.8f, 2.9f, 2.3f);
-            Console.WriteLine("Maximum float number is:" + maxno1);
-            
-            //It will return Third maximum float value
-            float maxno2 = CheckMaximumNumber.MaximumFloat(1.8f, 2.3f, 2.9f);
-            Console.WriteLine("Maximum float number is:" + maxno2);
-            Console.WriteLine("*****************************************************************");
-
-            //UC3 Maximum String 
-
-            Console.WriteLine("Find maximum  string among 3 string Values ");
-
-            //It will return maximum string value among 3 Strings.
-            string maxstring = CheckMaximumNumber.MaximunStringNumber("Peach","Apple","Banana");
-                Console.WriteLine("Maximum string is"+maxstring);
-
-            string maxstring1 = CheckMaximumNumber.MaximunStringNumber("Apple","Peach","Banana");
-            Console.WriteLine("Maximum string is" + maxstring1);
-
-
-            string maxstring2 = CheckMaximumNumber.MaximunStringNumber("Banana","Apple","Peach");
-            Console.WriteLine("Maximum string is" + maxstring2);
+            //string values
+            string[] stringArray = { "abc", "def", "ghj", "mko", "zsd" };
+            GenericsMaximum<string> genericString = new GenericsMaximum<string>(stringArray);
+            genericString.PrintValue();
+        }
 
         }
     }
-    }
+    
